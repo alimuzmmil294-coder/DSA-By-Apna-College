@@ -145,8 +145,22 @@ int main()
             totalSum += i;
         }
     }
-
     cout << "The sum of all numbers that are divisible by 3 is: " << totalSum << endl;
+
+    cout << endl;
+
+    cout << "Program to print factorial of a number: \n";
+    int fact;
+    int total = 1;
+    cout << "Enter a number: ";
+    cin >> fact;
+
+    for (int i = 1; i <= fact; i++)
+    {
+        total *= i;
+    }
+
+    cout << "The factorial of " << fact << " is: " << total << endl;
     cout << "Hello, Muzammil Ali!";
     return 0;
 }
