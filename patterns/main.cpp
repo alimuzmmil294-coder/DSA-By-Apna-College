@@ -49,9 +49,9 @@ int main()
 
     // Pattern 4: Continuous number grid
     cout << "Program for printing alphabets in pattern" << endl;
-    int nmbr = 0;
+    int nmbr = 6;
     cout << "Enter a number: ";
-    cin >> nmbr;
+    // cin >> nmbr;
 
     int m = 1; // Starting number
 
@@ -116,8 +116,9 @@ int main()
 
     // Print multiplication tables up to n
     cout << endl;
-    cout << "Enter a number: ";
-    cin >> n;
+    // cout << "Enter a number: ";
+    // cin >> n;
+    n = 4;
 
     for (int i = 1; i <= n; i++) // Table number
     {
@@ -138,6 +139,64 @@ int main()
     }
 
     cout << "Sum of the multiplication table: " << sum << endl;
+    n = 5;
+    for (int i = 0; i <= n; i++) // Loops continues until i = 5;
+    {
+        char chr = 'A' + i; // Initially chr store A, => then B, => then C until j = i;
+        for (int j = 0; j <= i; j++)
+        {
+            cout << chr << " ";
+        }
+        cout << endl;
+    }
+
+    n = 5;
+    nmbr = 1;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i; j >= 1; j--)
+        {
+            cout << nmbr << " ";
+            nmbr++;
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+    n = 4;
+    int nm = 1;
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 0; j < n - i; j++)
+        {
+            cout << (i + 1);
+        }
+
+        nm++;
+        cout << endl;
+    }
+
+    n = 5;
+    nm = 1;
+
+    for (int i = 0; i < n; i++)
+    {
+        // Spaces;
+        for (int j = 0; j < i; j++)
+        {
+            cout << " ";
+        }
+
+        // nmbrs
+        for (int j = 0; j < n - 1; j++)
+        {
+            cout<< n; 
+        }
+    }
 
     return 0; // End the program
 }
