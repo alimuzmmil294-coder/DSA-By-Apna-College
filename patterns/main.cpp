@@ -262,7 +262,7 @@ int main()
         cout << endl;
     }
 
-    n = 4;
+    n = 100;
     // top
     for (int i = 1; i <= n; i++)
     {
@@ -309,6 +309,13 @@ int main()
         for (int j = 0; j < n - i; j++)
         {
             cout << " ";
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            // cout << "Second :";
+            cout << "*";
+            // j++;
         }
 
         for (int j = 1; j <= i; j++)
