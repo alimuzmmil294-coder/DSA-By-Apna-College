@@ -5,95 +5,114 @@ int main()
 {
     int n;
 
-    // Pattern 1 (commented out): print a star triangle with fewer stars per row.
+    // Pattern 1: Inverted star triangle (currently commented out).
+    // The outer loop controls the rows, and the inner loop prints stars.
     cout << endl;
+
     // for (int i = 6; i >= 1; i--)
     // {
     //     for (int j = i; j < 6; j++)
     //     {
     //         cout << "* ";
     //     }
-    //     cout << endl;
+    //     cout << endl; // Move to the next row.
     // }
 
-    // Shared input value for the alphabet-pattern examples below.
+    // Declare variables used in the alphabet patterns.
     cout << endl;
     int i, j;
     int num;
-    cout << "Enter a number: ";
-    // cin >> num;
 
-    // Pattern 2 (commented out): restart at A on each row to form an alphabet square.
+    cout << "Enter a number: ";
+    // cin >> num; // Uncomment to take the pattern size from the user.
+
+    // Pattern 2: Alphabet square (currently commented out).
+    // Each row starts from 'A' and prints num consecutive letters.
+
     // for (i = 1; i <= num; i++)
     // {
-    //     char ch = 'A'; // Reset alphabet at each row
+    //     char ch = 'A'; // Reset the alphabet at the beginning of each row.
+    //
     //     for (j = 1; j <= num; j++)
     //     {
     //         cout << ch << " ";
-    //         ch++; // Move to the next alphabet
+    //         ch++; // Move to the next character.
     //     }
+    //
     //     cout << endl;
     // }
 
-    // Pattern 3 (commented out): print a shrinking alphabet row, restarting at A each time.
+    // Pattern 3: Shrinking alphabet triangle (currently commented out).
+    // Each row starts from 'A', but the number of letters decreases.
+
     // for (i = 1; i <= num; i++)
     // {
-    //     char ch = 'A'; // Start each row from A
+    //     char ch = 'A'; // Start every row with 'A'.
+    //
     //     for (j = i; j <= num; j++)
     //     {
     //         cout << ch << " ";
     //         ch++;
     //     }
+    //
     //     cout << endl;
     // }
 
-    // Pattern 4: fill a square grid with numbers that continue across row boundaries.
+    // Pattern 4: Print consecutive numbers in a square pattern.
     cout << "Program for printing alphabets in pattern" << endl;
-    int nmbr = 6;
+
+    int nmbr = 6; // Number of rows and columns in the square.
     cout << "Enter a number: ";
-    // cin >> nmbr;
+    // cin >> nmbr; // Uncomment to let the user choose the square size.
 
-    int m = 1; // Starting number
+    int m = 1; // Initialize the counter used to print consecutive numbers.
 
-    for (int i = 0; i < nmbr; i++) // Rows
+    // Outer loop controls the rows.
+    for (int i = 0; i < nmbr; i++)
     {
-        for (int j = 0; j < nmbr; j++) // Columns
+        // Inner loop controls the columns.
+        for (int j = 0; j < nmbr; j++)
         {
             cout << m << " ";
-            m++; // Continue counting across rows
+            m++; // Increase the number after printing it.
         }
-        cout << endl;
+
+        cout << endl; // Start a new row.
     }
 
+    // m contains the next number after all the numbers have been printed.
     cout << "The value of m is : " << m << endl;
 
-    // Pattern 5: continue the alphabet across the grid; the statement after the inner
-    // loop also prints the next character, so each row has one extra character.
+    // Pattern 5: Print consecutive alphabets in a grid.
+    // The character continues across rows because ch is declared outside both loops.
     cout << endl;
-    int muz = 3;
-    int c = 1; // Reserved for a future pattern; not used in this example.
 
-    char ch = 'A'; // Initialize once to continue across rows
+    int muz = 3; // Number of rows and columns.
+    int c = 1;   // Reserved for a future pattern; currently unused.
+
+    char ch = 'A'; // Start from 'A' and continue across all rows.
 
     for (int i = 0; i < muz; i++)
     {
         for (int j = 0; j < muz; j++)
         {
             cout << ch << " ";
-            ch++; // Move to the next alphabet
+            ch++; // Advance to the next character.
         }
 
-        cout << ch << endl; // Prints one extra alphabet
+        // Print one additional character after the inner loop.
+        // This makes each row contain one extra character.
+        cout << ch << endl;
     }
 
-    // Pattern 6: print a triangle whose letters continue from one row to the next.
+    // Pattern 6: Print an increasing alphabet triangle.
+    // Letters continue from one row to the next instead of restarting at 'A'.
     n = 5;
-    // cout << "Enter a number: ";
-    // cin >> n;
 
-    cout << endl;
+    // Inverted star triangle (alternative pattern, currently commented out).
+    // Each new row contains one fewer star than the previous row.
 
-    // Inverted star triangle (commented out): each successive row contains fewer stars.
+    // cout << endl;
     // for (int i = n; i >= 1; i--)
     // {
     //     for (int j = 1; j <= i; j++)
@@ -103,229 +122,296 @@ int main()
     //     cout << endl;
     // }
 
-    char ch1 = 'A'; // Continue alphabets across all rows
+    cout << endl;
 
+    char ch1 = 'A'; // Initialize the character counter before the loops.
+
+    // Outer loop determines the row number.
     for (int i = 1; i <= n; i++)
     {
+        // Print i characters in the current row.
         for (int j = 1; j <= i; j++)
         {
             cout << ch1 << " ";
-            ch1++;
+            ch1++; // Continue with the next alphabet.
         }
-        cout << endl;
+
+        cout << endl; // Move to the next row.
     }
 
-    // Print a partial multiplication table for each number from 1 through n.
+    // Pattern 7: Print partial multiplication tables.
+    // Row i prints the multiplication table for i from 1 through i.
     cout << endl;
-    // cout << "Enter a number: ";
-    // cin >> n;
-    n = 4;
 
-    for (int i = 1; i <= n; i++) // Table number
+    n = 4; // Number of multiplication tables to print.
+
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++) // Multipliers for each row
+        // Print multipliers from 1 up to the current table number.
+        for (int j = 1; j <= i; j++)
         {
-            cout << i << " * " << j << " = " << i * j << " \n";
+            cout << i << " * " << j << " = " << i * j << "\n";
         }
-        cout << endl;
+
+        cout << endl; // Separate the tables with a blank line.
     }
 
-    // Print the full 1-through-10 table for n and accumulate its products.
-    int sum = 0;
+    // Pattern 8: Print the complete multiplication table of n.
+    // Also calculate the sum of all multiplication results.
+    int sum = 0; // Initialize the sum before adding any products.
 
     for (int i = 1; i <= 10; i++)
     {
-        cout << n << " * " << i << " = " << n * i << " \n";
-        sum += n * i; // Add each result to the sum
+        // Print n multiplied by each number from 1 through 10.
+        cout << n << " * " << i << " = " << n * i << "\n";
+
+        sum += n * i; // Add the current product to the total sum.
     }
 
     cout << "Sum of the multiplication table: " << sum << endl;
-    // Repeat each row's letter, increasing that letter on the next row.
+
+    // Pattern 9: Print the same alphabet repeatedly in each row.
+    // The letter changes when the outer loop moves to the next row.
     n = 5;
-    for (int i = 0; i <= n; i++) // Loops continues until i = 5;
+
+    // i goes from 0 through n, so this produces n + 1 rows.
+    for (int i = 0; i <= n; i++)
     {
-        char chr = 'A' + i; // Select the letter for this row: A, then B, then C, and so on.
+        char chr = 'A' + i; // Select the row's letter: A, B, C, and so on.
+
+        // Print the selected letter i + 1 times.
         for (int j = 0; j <= i; j++)
         {
             cout << chr << " ";
         }
+
         cout << endl;
     }
 
-    // Print a rising number triangle using one counter shared by all rows.
+    // Pattern 10: Print a triangle of consecutive numbers.
+    // The counter nmbr is shared by every row and never resets.
     n = 5;
-    nmbr = 1;
+    nmbr = 1; // Reset the number counter before starting this pattern.
+
     for (int i = 0; i < n; i++)
     {
+        // Print i numbers in the current row.
+        // The first row prints zero numbers because i starts at 0.
         for (int j = i; j >= 1; j--)
         {
             cout << nmbr << " ";
-            nmbr++;
+            nmbr++; // Move to the next number.
         }
+
         cout << endl;
     }
 
-    // Print a right-aligned pattern: add leading spaces, then repeat the row number.
+    // Pattern 11: Print a right-aligned number pattern.
+    // Leading spaces shift each row to the right.
     cout << endl;
+
     n = 4;
-    int nm = 1;
+    int nm = 1; // Counter currently incremented but not used for printing.
+
     for (int i = 0; i <= n; i++)
     {
+        // Print leading spaces to shift the row.
         for (int j = 0; j < i; j++)
         {
             cout << " ";
         }
+
+        // Print the current row number i + 1, n - i times.
         for (int j = 0; j < n - i; j++)
         {
             cout << (i + 1);
         }
 
-        nm++;
+        nm++; // Increment the unused counter.
         cout << endl;
     }
 
-    // An unfinished number-pattern attempt, retained as a commented example.
+    // Pattern 12: An unfinished number-pattern attempt.
+    // The original loop is commented out because the pattern is incomplete.
     n = 5;
     nm = 1;
 
     // for (int i = 0; i < n; i++)
     // {
-    //     // Spaces;
+    //     // Print leading spaces for alignment.
     //     for (int j = 0; j < i; j++)
     //     {
     //         cout << " ";
     //     }
-
-    //     // nmbrs
+    //
+    //     // Attempt to print numbers in the row.
     //     for (int j = 0; j < n - 1; j++)
     //     {
     //         cout << n;
     //     }
+    //
+    //     cout << endl;
     // }
 
-    // Print each row's letter repeatedly, with the letter advancing by row.
+    // Pattern 13: Print a centered alphabet triangle.
+    // Each row repeats one letter, and the letter advances with the row.
     n = 6;
-    num = 1;
+    num = 1; // Currently unused in this pattern.
+
     for (int i = 0; i <= n; i++)
     {
+        // Print leading spaces before the letters.
         for (int j = 0; j <= i; j++)
         {
             cout << " ";
         }
 
-        char ch = 'A' + i;
+        char ch = 'A' + i; // Determine the letter for the current row.
+
+        // Print the letter i times.
         for (int j = 1; j <= i; j++)
         {
             cout << ch;
+
+            // Alternative experiments:
             // cout << i;
             // ch = ch + i;
         }
-        // ch++;
+
+        // ch++; // Not needed because ch is recalculated in each row.
         cout << endl;
     }
 
-    // Print the matching descending half, moving from F back toward A.
+    // Pattern 14: Print the descending half of the alphabet pattern.
+    // The letter moves backward from F to A as the rows get shorter.
     cout << endl;
+
     for (int i = n; i > 0; i--)
     {
-        char ch = 'A' + i - 1;
+        char ch = 'A' + i - 1; // Select the letter for the current row.
+
+        // Print leading spaces to align the pattern.
         for (int j = 1; j <= i; j++)
         {
             cout << " ";
         }
+
+        // Repeat the current letter i times.
         for (int j = 1; j <= i; j++)
         {
             cout << ch;
         }
+
         cout << endl;
     }
 
-    // Print a centered numeric pyramid: ascending digits to the middle, then descending.
+    // Pattern 15: Print a centered numeric pyramid.
+    // Each row prints ascending digits followed by descending digits.
     cout << endl;
+
     for (int i = 0; i < n; i++)
     {
-        int numberOfSpaces = n - i - 1;
+        int numberOfSpaces = n - i - 1; // Calculate the leading spaces.
+
+        // Print spaces before the numbers to center the row.
         for (int j = 1; j <= numberOfSpaces; j++)
         {
             cout << " ";
         }
+
+        // Print ascending numbers from 1 through i.
         for (int j = 1; j <= i; j++)
         {
             cout << j;
-            // i++;
+            // i++; // Do not increment i here; the outer loop controls rows.
         }
-        // cout << " ";
+
+        // Print descending numbers from i - 1 back to 1.
         for (int j = i - 1; j >= 1; j--)
         {
             cout << j;
         }
+
         cout << endl;
     }
 
+    // Pattern 16: Print the upper half of a large diamond-like star pattern.
     n = 100;
-    // top
+
+    // TOP HALF:
+    // Each row prints increasing numbers of stars on both sides.
+    // Spaces between the two star groups create the central gap.
     for (int i = 1; i <= n; i++)
     {
+        // Print the left group of i stars.
         for (int j = 1; j <= i; j++)
         {
-            // cout << "First :";
             cout << "*";
-            // j++;
+            // j++; // Do not increment j manually; the for loop does this.
         }
+
+        // Print spaces after the left group.
         for (int j = 0; j < n - i - 1; j++)
         {
             cout << " ";
         }
 
+        // Print additional spaces to create the gap between the groups.
         for (int j = 0; j < n - i; j++)
         {
             cout << " ";
         }
 
+        // Print the right group of i stars.
         for (int j = i; j >= 1; j--)
         {
-            // cout << "Second :";
             cout << "*";
-            // j++;
+            // j++; // Do not increment j manually.
         }
-        cout << endl;
+
+        cout << endl; // Finish the current row.
     }
 
-    // Bottom
-
+    // BOTTOM HALF:
+    // Print decreasing star groups on the left, followed by spaces
+    // and two star groups on the right.
     for (int i = n; i >= 1; i--)
     {
+        // Print the left group of i stars.
         for (int j = i; j >= 1; j--)
         {
-            // cout << "First :";
             cout << "*";
-            // j++;
+            // j++; // The loop automatically decreases j.
         }
+
+        // Print spaces after the left group.
         for (int j = 0; j < n - i - 1; j++)
         {
             cout << " ";
         }
 
+        // Print additional spaces between the star groups.
         for (int j = 0; j < n - i; j++)
         {
             cout << " ";
         }
 
+        // Print the first right-hand group of i stars.
         for (int j = 1; j <= i; j++)
         {
-            // cout << "Second :";
             cout << "*";
-            // j++;
+            // j++; // Do not increment j manually.
         }
 
+        // Print a second right-hand group of i stars.
         for (int j = 1; j <= i; j++)
         {
-            // cout << "Second :";
             cout << "*";
-            // j++;
+            // j++; // The loop automatically increments j.
         }
-        cout << endl;
+
+        cout << endl; // Finish the current row.
     }
 
-    return 0; // End the program
+    return 0; // Return 0 to indicate successful program execution.
 }
