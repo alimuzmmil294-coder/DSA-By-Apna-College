@@ -32,8 +32,8 @@ int Fact(int n)
     ;
 }
 
-int sumOfDigits(int num){
-    
+int sumOfDigits(int num)
+{
 }
 
 // Program entry point: demonstrates basic arithmetic and utility functions.
@@ -53,6 +53,9 @@ int main()
     cout << endl;
 
     // Final greeting.
+    cout << "Hello, Muzammil Ali!";
+    cout << "Hello, Muzammil Ali!";
+    cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     return 0;
 }
