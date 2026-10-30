@@ -36,6 +36,15 @@ int sumOfDigits(int num)
 {
 }
 
+int combination(int N, int R)
+{
+    int total, fact, totalN, totalR, totalSubR = 0;
+
+    for (int i = 1; i <= N; i++)
+    {
+    }
+}
+
 // Program entry point: demonstrates basic arithmetic and utility functions.
 int main()
 {
@@ -50,6 +59,8 @@ int main()
 
     // Example: compute factorial.
     Fact(5);
+    cout << endl;
+
     cout << endl;
 
     // Final greeting.
