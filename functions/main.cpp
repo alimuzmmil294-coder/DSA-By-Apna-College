@@ -90,11 +90,63 @@ int combination(int N, int R)
     return result;
 }
 
+bool primeOrNot(int n)
+{
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
 
+void printAllPrimeNumbers(int n){
+    for (int i = 1; i <= n; i++)
+    {
+        if (i <= 1)
+        {
+            continue;
+        }
+
+        bool isPrime = true;
+        for (int j = 2; j * j <= i; j++)
+        {
+            if (i % j == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime)
+        {
+            cout << "the prime numbers from 1 to n are: " << i << endl;
+        }
+    }
+}
+
+void fibonaccir(int n){
+    int first =0;
+    int second = 1;
+    int next;
+
+    for (int i = 0; i <= n; i++)
+    {
+        
+    }
+    
+}
 
 // Program entry point: demonstrates basic arithmetic and utility functions.
 int main()
 {
+    cout << primeOrNot(4) << endl;
+    cout << primeOrNot(5) << endl;
+
+    printAllPrimeNumbers(11);
+
     // Example: add two numbers.
     // cout << add(5, 10);
     // add(29, 32);
