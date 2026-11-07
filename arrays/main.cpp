@@ -59,7 +59,8 @@ int main()
     cout << "The largest value is : " << largest << endl;
     cout << "The Index of largest value is : " << lInd << endl;
 
-    // Print a greeting before exiting.
     cout << "Hello, Muzammil Ali!";
+    cout << "Hello, Muzammil Ali!";
+    // Print a greeting before exiting.
     return 0;
 }
