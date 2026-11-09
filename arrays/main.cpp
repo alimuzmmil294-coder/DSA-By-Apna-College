@@ -14,6 +14,18 @@ int linearSearch(int arr[], int size, int target)
 }
 int main()
 {
+    int first = 10;
+    int second = 20;
+    int third = 30;
+
+    {
+        int third = second - first;
+        cout<< third << endl;
+    }
+
+    cout<< "The value of third is: " << third << endl;
+
+
     int arr[] = {1, 2, 3, 4, 5};
     int size = 5;
     int target = 5;
