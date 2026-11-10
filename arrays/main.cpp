@@ -20,11 +20,10 @@ int main()
 
     {
         int third = second - first;
-        cout<< third << endl;
+        cout << third << endl;
     }
 
-    cout<< "The value of third is: " << third << endl;
-
+    cout << "The value of third is: " << third << endl;
 
     int arr[] = {1, 2, 3, 4, 5};
     int size = 5;
@@ -71,6 +70,14 @@ int main()
     cout << "The largest value is : " << largest << endl;
     cout << "The Index of largest value is : " << lInd << endl;
 
+    int arr1[5] = {1, 2, 3, 2, 1};
+    int start = arr1[0];
+    for (int i = 0; i < 5; i++)
+    {
+        if ()
+    }
+
+    cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
