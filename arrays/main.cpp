@@ -74,9 +74,13 @@ int main()
     int start = arr1[0];
     for (int i = 0; i < 5; i++)
     {
-        if ()
-    }
+        if (arr1[i] == start)
+        {
+            cout << "The value is: " << arr1[i] << endl;
+        }
+    };
 
+    cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
