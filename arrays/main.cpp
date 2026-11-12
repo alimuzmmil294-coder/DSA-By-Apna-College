@@ -86,6 +86,7 @@ int main()
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
     cout << "Hello, Muzammil Ali!";
+    cout<< " This is just for GitHub streak!"
     // Print a greeting before exiting.
     return 0;
 }
