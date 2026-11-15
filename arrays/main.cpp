@@ -88,7 +88,8 @@ int main()
     cout << "Hello, Muzammil Ali!";
     cout<< " This is just for GitHub streak!: Day 1";
     cout<< " This is just for GitHub streak!: Day 2";
-    cout<< " This is just for GitHub streak!: Day 3x`";
+    cout<< " This is just for GitHub streak!: Day 3";
+    cout<< " This is just for GitHub streak!: Day 4";
     // Print a greeting before exiting.
     return 0;
 }
