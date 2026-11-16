@@ -93,3 +93,103 @@ int main()
     // Print a greeting before exiting.
     return 0;
 }
+
+// def calPostFix(expr):
+//   stack = []
+//   for token in expr.split():
+//     if token in "+-*/":
+//       if len(stack) < 2:
+//         return "Invalid Expression!"
+//       b = stack.pop()
+//       a = stack.pop()
+
+//       if token == "+":
+//         stack.append(a + b)
+//       elif token == "-":
+//         stack.append(a - b)
+//       elif token == "/":
+//         stack.append(a / b)
+//       else:
+//         stack.append(a * b)
+//     else:
+//       stack.append(int(token))
+//     print(token, stack)
+//   if len(stack) != 1:
+//     return "Invalid Expression!"
+//   return stack.pop()
+// print(calPostFix("3 4 + 8 - 2 /"))
+
+// print(" ")
+// print("Prefix Function: ")
+// print(" ")
+
+// def calPreFix(expr):
+//   stack = []
+//   tokens = expr.split()
+//   for i in range(len(tokens) - 1, -1, -1):
+//     token = tokens[i]
+//     if token in "+-*/":
+//       if len(stack) < 2:
+//         return "Invalid Expression!"
+//       a = stack.pop()
+//       b = stack.pop()
+
+//       if token == "+":
+//         stack.append(a + b)
+//       elif token == "-":
+//         stack.append(a - b)
+//       elif token == "/":
+//         stack.append(a / b)
+//       else:
+//         stack.append(a * b)
+//     else:
+//       stack.append(int(token))
+//     print(token, stack)
+//   if len(stack) != 1:
+//     return "Invalid expressions!"
+//   return stack.pop()
+
+// print(calPreFix("+ * 3 4 9"))
+      
+// print(" ")
+// print("Balanced Brackets checker: ")
+// print(" ")
+
+// def isBal(expr):
+//   stack = []
+//   for ch in expr:
+//     if ch in "{[(":
+//       stack.append(ch)
+//     elif ch in "}])":
+//       if len(stack) == 0:
+//         return False
+
+//       opening = stack.pop()
+
+//       if ch == ")" and opening != "(":
+//         return False
+//       elif ch == "]" and opening != "[":
+//         return False
+//       elif ch == "}" and opening != "{":
+//         return False
+//   return len(stack) == 0
+// print(isBal("{ [ ( ) ] }"))
+
+
+// def isBal2(expr):
+//   stack = []
+//   for ch in expr:
+//     if ch in "([{":
+//       stack.append(ch)
+//     elif ch in "}])":
+//       if len(stack) == 0:
+//         return False
+//       opening = stack.pop()
+//       if ch == ")" and opening != "(":
+//         return False
+//       elif ch == "]" and opening != "[":
+//         return False
+//       elif ch == "}" and opening != "{":
+//         return False
+//   return len(stack) == 0
+// print(isBal2("{ [ ( ) ] }"))
