@@ -92,6 +92,7 @@ int main()
     cout<< " This is just for GitHub streak!: Day 4";
     cout<< " This is just for GitHub streak!: Day 5";
     cout<< " This is just for GitHub streak!: Day 6";
+    cout<< " This is just for GitHub streak!: Day 7";
     // Print a greeting before exiting.
     return 0;
 }
