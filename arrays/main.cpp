@@ -102,6 +102,9 @@ int main()
     cout<< " This is just for GitHub streak!: Day 7";
     cout<< " This is just for GitHub streak!: Day 7";
     cout<< " This is just for GitHub streak!: Day 7";
+    cout<< " This is just for GitHub streak!: Day 7";
+    cout<< " This is just for GitHub streak!: Day 7";
+    cout<< " This is just for GitHub streak!: Day 7";
     return 0;
 }
 
