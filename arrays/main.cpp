@@ -95,16 +95,17 @@ int main()
     cout<< " This is just for GitHub streak!: Day 7";
     // Print a greeting before exiting.
     // Print a greeting before exiting.
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
-    cout<< " This is just for GitHub streak!: Day 7";
+    cout<< " This is just for GitHub streak!: Day 8";
+    cout<< " This is just for GitHub streak!: Day 9";
+    cout<< " This is just for GitHub streak!: Day 10";
+    cout<< " This is just for GitHub streak!: Day 11";
+    cout<< " This is just for GitHub streak!: Day 12";
+    cout<< " This is just for GitHub streak!: Day 13";
+    cout<< " This is just for GitHub streak!: Day 14";
+    cout<< " This is just for GitHub streak!: Day 15";
+    cout<< " This is just for GitHub streak!: Day 16";
+    cout<< " This is just for GitHub streak!: Day 17";
+    cout<< " This is just for GitHub streak!: Day 18";
     return 0;
 }
 
