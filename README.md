@@ -1,50 +1,8 @@
 # DSA Practice Repository
 
-This repository is a beginner-friendly C++ learning project focused on Data Structures and Algorithms (DSA), problem-solving, and core programming fundamentals. It contains small practice programs and examples designed to build confidence in logic building, loops, conditions, and pattern printing.
+This repository contains beginner-friendly C++ programs for learning programming fundamentals, problem solving, and introductory data structures and algorithms. Each folder contains small, independent practice programs.
 
-The code in this repo is simple, classroom-style, and ideal for students who are starting with C++ and DSA.
-
-## Repository Overview
-
-The project is organized into a few main folders, each covering a different stage of learning:
-
-- `Variable, Data types and Operators/`
-  - Basic C++ syntax
-  - Variables
-  - Data types
-  - Operators
-  - Output formatting
-
-- `conditions-and-loops/`
-  - If/else conditions
-  - Ternary operator
-  - While, do-while, and for loops
-  - Prime number checks
-  - Factorial computation
-  - Number-sum logic
-
-- `patterns/`
-  - Star patterns
-  - Alphabet patterns
-  - Number patterns
-  - Nested loops
-  - Multiplication tables
-
-## Topics Covered
-
-This repository helps practice the following C++/DSA fundamentals:
-
-- C++ programming basics
-- Input and output with `cin` and `cout`
-- Variables and data types
-- Arithmetic and logical operators
-- Conditional statements
-- Repetition using loops
-- Pattern printing techniques
-- Basic algorithmic thinking
-- Beginner-level problem solving
-
-## Folder Structure
+## Repository Structure
 
 ```text
 DSA/
@@ -52,83 +10,86 @@ DSA/
 ├── Variable, Data types and Operators/
 │   └── demo.cpp
 ├── conditions-and-loops/
+│   └── main.cpp
+├── functions/
+│   └── main.cpp
+├── arrays/
+│   └── main.cpp
+├── patterns/
 │   ├── main.cpp
-│   ├── test.exe
-│   ├── myprogram.exe
-│   ├── main.exe
-│   └── a.exe
-└── patterns/
-    ├── main.cpp
-    ├── practice.cpp
-    ├── test.exe
-    ├── practice.exe
-    └── main.exe
+│   └── practice.cpp
+└── kadaneAlghorithm/
+    └── main.cpp
 ```
 
-## Example Programs Included
+Compiled `.exe` files may also be present. The `.cpp` files are the source files used for learning and development.
 
-- Hello world program
-- Character classification (uppercase/lowercase)
-- Loop-based examples
-- Prime number detection
-- Factorial calculation
-- Number and alphabet pattern logic
-- Multiplication table generation
+## Topics Covered
 
-## How to Run the Programs
+### Variables, Data Types, and Operators
 
-You can compile and run any `.cpp` file using `g++`.
+`Variable, Data types and Operators/demo.cpp` introduces basic C++ output, variables, and a simple C++14 program.
 
-### Linux / macOS
+### Conditions and Loops
+
+`conditions-and-loops/main.cpp` demonstrates character checks, the ternary operator, `while`, `do-while`, and `for` loops, odd and even sums, prime-number checking, sums of numbers divisible by three, and factorial calculation.
+
+### Functions
+
+`functions/main.cpp` contains practice functions for addition, comparison, factorials, combinations using `nCr`, prime checking, and printing primes up to a limit. It also contains an unfinished Fibonacci exercise.
+
+### Arrays and Searching
+
+`arrays/main.cpp` demonstrates array traversal, linear search, finding minimum and maximum values with their indices, and basic array comparisons. It also contains practice notes for postfix and prefix evaluation and balanced brackets.
+
+### Patterns
+
+The programs in `patterns/` practice nested loops and output formatting, including star patterns, alphabet squares and triangles, consecutive-number patterns, repeated-letter patterns, centered pyramids, multiplication tables, and a large diamond-like star pattern. `practice.cpp` provides additional interactive alphabet and star-pattern exercises.
+
+### Kadane-Style Maximum Subarray Sum
+
+`kadaneAlghorithm/main.cpp` calculates the maximum sum of contiguous subarrays using nested loops. The example uses `{1, 2, 3, 4, 5}`.
+
+## How to Compile and Run
+
+From the repository root, compile a source file with `g++`.
+
+### Windows PowerShell
+
+```powershell
+g++ ".\conditions-and-loops\main.cpp" -o ".\conditions-and-loops\main.exe"
+& ".\conditions-and-loops\main.exe"
+```
+
+For a folder name containing spaces, quote the path:
+
+```powershell
+g++ ".\Variable, Data types and Operators\demo.cpp" -o ".\Variable, Data types and Operators\demo.exe"
+& ".\Variable, Data types and Operators\demo.exe"
+```
+
+### Linux and macOS
 
 ```bash
-g++ main.cpp -o main
-./main
+g++ "conditions-and-loops/main.cpp" -o "conditions-and-loops/main"
+./conditions-and-loops/main
 ```
 
-### Windows (PowerShell)
+## Suggested Learning Order
 
-```powershell
-g++ .\main.cpp -o main.exe
-.\main.exe
-```
-
-For files with spaces in the folder name, wrap the path in quotes:
-
-```powershell
-g++ ".\Variable, Data types and Operators\demo.cpp" -o demo.exe
-.\demo.exe
-```
+1. Variables, data types, and operators
+2. Conditions and loops
+3. Functions
+4. Arrays and linear search
+5. Nested loops and patterns
+6. Maximum subarray-sum algorithms
 
 ## Notes
 
-- The `.exe` files are compiled binaries generated from the C++ source code.
-- The actual learning source files are the `.cpp` programs.
-- This repository is intended for practice and understanding of core programming concepts.
-
-## Learning Roadmap
-
-A good progression for this repo would be:
-
-1. Start with variables, data types, and operators
-2. Learn conditional statements and control flow
-3. Practice loops and nested loops
-4. Move to pattern printing
-5. Build basic logic for algorithmic problem solving
-
-## Purpose
-
-This repository is designed to help learners:
-
-- understand C++ fundamentals clearly
-- practice logic-building exercises
-- improve problem-solving confidence
-- prepare for more advanced DSA topics later on
+- Some exercises are intentionally incomplete or commented out for practice.
+- Programs use console input and output through `cin` and `cout`.
+- The project can be extended with strings, recursion, sorting, stacks, queues, and linked lists.
 
 ## Author
 
 Created as part of a C++ and DSA learning journey.
-
----
-
-This project is a beginner-friendly foundation for understanding programming logic, and it can be expanded further with more DSA topics such as arrays, strings, recursion, sorting, searching, stacks, queues, and linked lists.
