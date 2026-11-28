@@ -1,8 +1,10 @@
+// Demonstrates array traversal, linear search, and min/max tracking.
 #include <iostream>
 using namespace std;
 
 int linearSearch(int arr[], int size, int target)
 {
+    // Return the first matching index, or -1 when the target is absent.
     for (int i = 0; i < size; i++)
     {
         if (arr[i] == target)
@@ -14,6 +16,7 @@ int linearSearch(int arr[], int size, int target)
 }
 int main()
 {
+    // Demonstrate scope, searching, extrema, and repeated-value checks.
     int first = 10;
     int second = 20;
     int third = 30;

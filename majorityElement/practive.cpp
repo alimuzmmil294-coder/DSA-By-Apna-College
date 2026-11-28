@@ -1,3 +1,4 @@
+// Practice implementations of pair-sum and majority-element algorithms.
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -90,8 +91,33 @@ int mooreVoting(vector<int> arr)
     return candidate;
 }
 
+int majoVoting(vector<int> arr)
+{
+    // A second compact implementation of Boyer–Moore voting.
+    int candidate = 0;
+    int count = 0;
+    for (int val : arr)
+    {
+        if (count == 0)
+        {
+            candidate = val;
+        }
+
+        if (candidate == val)
+        {
+            count++;
+        }
+        else
+        {
+            count--;
+        }
+    }
+    return candidate;
+}
+
 int main()
 {
+    // Run the pair-sum and majority-element examples.
     // --- Test Case 1: Two-Pointer Pair Sum ---
     vector<int> arr = {-4, -4, -2, 0, 2, 4, 4, 6};
     int target = 0;
@@ -109,10 +135,11 @@ int main()
     // --- Test Case 2: Majority Element Algorithms ---
     // Note: In arr1 (size 12), no element appears > 6 times (3 appears 5x, 5 appears 5x),
     // so both majority functions will return inaccurate results for this specific input.
-    vector<int> arr1 = {3, 3, 4, 2, 3, 5, 5, 5, 5, 3, 5, 3};
+    vector<int> arr1 = {3, 3, 4, 2, 3, 5, 5, 5, 5, 3, 5, 3, 1, 2, 3, 3, 3, 3, 3};
     cout << "the optimized majority element :" << majoOptimze(arr1) << endl;
+    cout << "the optimized majority element :" << majoVoting(arr1) << endl;
     cout << "The Moore's Voting method: " << mooreVoting(arr1) << endl;
 
     cout << "Hello, Muzammil Ali!";
     return 0;
-}   
+}

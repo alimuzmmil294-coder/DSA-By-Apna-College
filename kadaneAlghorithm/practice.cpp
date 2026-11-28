@@ -1,7 +1,9 @@
+// Practice implementation of Kadane's algorithm with subarray boundaries.
 #include <iostream>
 using namespace std;
 int main()
 {
+    // The sample contains positive and negative values to exercise resets.
     int arr[] = {5, -8, 6, 4, -2, 3, -10, 7, 2, -1, 4};
     int size = sizeof(arr) / sizeof(arr[0]);
 

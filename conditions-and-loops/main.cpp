@@ -1,8 +1,10 @@
+// Demonstrates conditionals, ternary expressions, loops, primes, and factorials.
 #include <iostream>
 using namespace std;
 
 int main()
 {
+    // Read values and run each control-flow exercise in sequence.
     // Example of conditional statements using a character input.
     char alpha;
     cout << "Enter a character: " << endl;

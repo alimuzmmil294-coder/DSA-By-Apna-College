@@ -1,8 +1,10 @@
+// Collection of nested-loop exercises for numeric, alphabet, and star patterns.
 #include <iostream>
 using namespace std;
 
 int main()
 {
+    // Most exercises are fixed examples; commented sections can be enabled for experiments.
     int n;
 
     // Pattern 1: Inverted star triangle (currently commented out).

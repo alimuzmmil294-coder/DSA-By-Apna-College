@@ -1,7 +1,9 @@
+// Prints every contiguous subarray and practices maximum-subarray calculations.
 #include <iostream>
 using namespace std;
 int main()
 {
+    // The commented blocks preserve earlier algorithm experiments for reference.
     // int size = 5;
     // for (int start = 0; start < size; start++)
     // {

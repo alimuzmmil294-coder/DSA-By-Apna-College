@@ -1,9 +1,11 @@
+// Practice functions for arithmetic, factorials, combinations, and primes.
 #include <iostream>
 using namespace std;
 
 // Adds two numbers and prints the result.
 double add(double a, double b)
 {
+    // Print the sum of two values.
     cout << a + b;
 }
 
@@ -34,6 +36,7 @@ int Fact(int n)
 
 int sumOfDigits(int num)
 {
+    // Reserved exercise: calculate and return the digits' sum.
 }
 /**
  * Calculates the binomial coefficient (N choose R) using factorials.
@@ -92,6 +95,7 @@ int combination(int N, int R)
 
 bool primeOrNot(int n)
 {
+    // Test divisors only up to the square root of n.
     for (int i = 2; i * i <= n; i++)
     {
         if (n % i == 0)
@@ -103,6 +107,7 @@ bool primeOrNot(int n)
 }
 
 void printAllPrimeNumbers(int n){
+    // Check each integer from 2 through n and print the primes.
     for (int i = 1; i <= n; i++)
     {
         if (i <= 1)
@@ -128,6 +133,7 @@ void printAllPrimeNumbers(int n){
 }
 
 void fibonaccir(int n){
+    // Reserved exercise for generating the first n Fibonacci values.
     int first =0;
     int second = 1;
     int next;
@@ -142,6 +148,7 @@ void fibonaccir(int n){
 // Program entry point: demonstrates basic arithmetic and utility functions.
 int main()
 {
+    // Run selected function exercises; other calls remain commented for practice.
     cout << primeOrNot(4) << endl;
     cout << primeOrNot(5) << endl;
 

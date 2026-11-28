@@ -1,9 +1,11 @@
+// Finds a pair with a requested sum in a sorted array using two pointers.
 #include <iostream>
 #include <vector>
 using namespace std;
 
 vector<int> pairSum(vector<int> arr, int target)
 {
+    // Move inward from both ends because the input array is sorted.
     int n = arr.size();
     cout << n << '\n';
     int i = 0;
@@ -32,6 +34,7 @@ vector<int> pairSum(vector<int> arr, int target)
 
 int main()
 {
+    // Demonstrate pairSum with a sorted sample array.
     vector<int> arr = {-10, -8, -2, -1, 2, 3, 4, 4, 5, 6, 7};
     int target = 15;
 
